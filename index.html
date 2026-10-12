@@ -554,11 +554,6 @@
                     </div>
 
                     <div class="form-group">
-                        <label>ناوی کۆمیتە:</label>
-                        <input type="text" name="committee" required placeholder="ناوی کۆمیتە...">
-                    </div>
-
-                    <div class="form-group">
                         <label>شار:</label>
                         <input type="text" name="city" required value="سلێمانی">
                     </div>
@@ -663,11 +658,6 @@
                     <div class="form-group" id="schoolRepBox" style="display:none;">
                         <label>نوێنەری چ پۆلێک؟</label>
                         <input type="text" name="repDepartment" placeholder="ناوی پۆل یان بەش...">
-                    </div>
-
-                    <div class="form-group">
-                        <label>ناوی کۆمیتە:</label>
-                        <input type="text" name="committee" required placeholder="ناوی کۆمیتە...">
                     </div>
 
                     <div class="form-group">
@@ -931,7 +921,6 @@
                         ${item.schoolGrade ? `<p><strong>پۆل/قۆناغ:</strong> ${item.schoolGrade}</p>` : ''}
                         ${item.major ? `<p><strong>بەش و کۆلێژ:</strong> ${item.major}</p>` : ''}
                         ${item.isRepresentative === 'بەلێ' ? `<p><strong>نوێنەر:</strong> بەڵێ (${item.repDepartment || ''})</p>` : ''}
-                        <p><strong>کۆمیتە:</strong> ${item.committee || '-'}</p>
                         <p><strong>شار:</strong> ${item.city || '-'}</p>
                         <p><strong>کاری پێشتر:</strong> ${item.prevWork || '-'}</p>
                         <p><strong>بەڕێکەوت:</strong> ${item.date || '-'}</p>
